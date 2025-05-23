@@ -15,12 +15,17 @@ class HuffmanNode{
     bool isLeaf();
     char getC();
     int getAmount();
+    HuffmanNode* getLeft();
+    HuffmanNode* getRight();
     struct Compare{
         bool operator()(HuffmanNode* a, HuffmanNode* b){
             return a->amount > b->amount;
         }
-    }
-
+    };
+    void changeLeft(HuffmanNode* left);
+    void changeRight(HuffmanNode* right);
+    void changeC(char c);
+    void changeAmount(int amount);
 };
 
 /*struct HuffmanNode{

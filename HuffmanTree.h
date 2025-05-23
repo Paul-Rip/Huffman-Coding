@@ -11,15 +11,15 @@
 class HuffmanTree{
     private:
     HuffmanNode* root;
-    std::map<char, std::string> coded;
-    std::map<char, std::string> createEncodingsHelper(HuffmanNode* root);
+    std::string chars;
+    std::map<char, std::string> paths;
+    std::map<char, std::string> createEncodingsHelper(HuffmanNode* root, std::string path, int i);
     public:
     HuffmanTree(std::map<char, int> counts);
     HuffmanTree(std::istream* in);
     std::map<char, std::string> createEncodings();
     void compress(ifstream* input, OBitStream* output);
     void decompress(IBitStream* input, OBitStream* output);
-
 };
 
 
