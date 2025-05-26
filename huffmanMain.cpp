@@ -25,7 +25,7 @@
 #define USING_QT
 
 #ifdef USING_QT
-const string PREFIX = "C:\\Users\\admin\\Downloads\\HuffmanCoding\\res\\";
+const string PREFIX = "C:\\Users\\paul_\\Downloads\\HuffmanCoding2\\res\\";
 #include "console.h"
 #else
 const string PREFIX = "";

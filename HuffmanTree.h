@@ -14,6 +14,7 @@ class HuffmanTree{
     std::string chars;
     std::map<char, std::string> paths;
     std::map<char, std::string> createEncodingsHelper(HuffmanNode* root, std::string path, int i);
+    void constructorHelper(std::istream* in, HuffmanNode* root);
     public:
     HuffmanTree(std::map<char, int> counts);
     HuffmanTree(std::istream* in);
